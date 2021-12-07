@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1027342809104",
+    "project_id": "saga-music-f5e9e",
+    "storage_bucket": "saga-music-f5e9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027342809104:android:22863a3b20ea968fd8b295",
+        "android_client_info": {
+          "package_name": "com.example.f_202110_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027342809104-hqeh4htdfqfbdtqestv7cfqe81iviiuu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK2Upp4ikrsa1qkOIrUWSKmWJMWmh9PC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027342809104-hqeh4htdfqfbdtqestv7cfqe81iviiuu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
