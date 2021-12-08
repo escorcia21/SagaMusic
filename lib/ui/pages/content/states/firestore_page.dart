@@ -3,6 +3,7 @@ import 'package:red_egresados/domain/use_cases/controllers/firestore_controller.
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prompt_dialog/prompt_dialog.dart';
+import 'package:red_egresados/ui/pages/content/states/widgets/new_state.dart';
 import 'package:red_egresados/ui/theme/colors.dart';
 
 class FireStorePage extends StatefulWidget {
@@ -50,7 +51,7 @@ class _FireStorePageState extends State<FireStorePage> {
 
   Widget _buildItem(BuildContext context, Publications record) {
     return Padding(
-      key: ValueKey(record.name),
+      key: ValueKey(record.user),
       padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
       child: Container(
         decoration: BoxDecoration(
@@ -58,10 +59,11 @@ class _FireStorePageState extends State<FireStorePage> {
           borderRadius: BorderRadius.circular(5.0),
         ),
         child: ListTile(
-          title: Text(record.user),
-          subtitle: Text(record.name),
-          trailing: Text(record.votes.toString()),
-          onTap: () => firebaseController.updateEntry(record),
+          title: Text(record.userName),
+          subtitle: Text(record.content),
+          trailing: Text(record.favorites.toString()),
+          onTap: () => firebaseController.updateEntry(record, 1),
+          //onLongPress: () => firebaseController.updateEntry(record, 0),
           onLongPress: () => firebaseController.deleteEntry(record),
         ),
       ),
@@ -77,12 +79,13 @@ class _FireStorePageState extends State<FireStorePage> {
   Future<String> getName(BuildContext context) async {
     String? result = await prompt(
       context,
-      title: Text('Adding a baby'),
+      title: Text('Agrega un estado'),
       initialValue: '',
       textOK: Text('Ok'),
       textCancel: Text('Cancel'),
-      hintText: 'Baby name',
+      hintText: 'Escribe aquí',
       minLines: 1,
+      maxLines: 7,
       autoFocus: true,
       obscureText: false,
       textCapitalization: TextCapitalization.words,
