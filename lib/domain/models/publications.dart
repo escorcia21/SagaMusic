@@ -13,14 +13,14 @@ class Publications {
         assert(map['userName'] != null),
         assert(map['favorites'] != null),
         content = map['content'],
-        favorites = map['favorites'],
         user = map['user'],
-        userName = map['userName'];
+        userName = map['userName'],
+        favorites = map['favorites'];
 
   Publications.fromSnapshot(DocumentSnapshot snapshot)
       : this.fromMap(snapshot.data() as Map<String, dynamic>,
             reference: snapshot.reference);
 
   @override
-  String toString() => "Record<$user:$favorites:$content>";
+  String toString() => "Record<$user:$favorites>";
 }

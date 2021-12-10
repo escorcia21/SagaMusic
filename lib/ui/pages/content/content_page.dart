@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
 import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
-import 'package:red_egresados/ui/pages/content/chats/chat_screen.dart';
 import 'package:red_egresados/ui/pages/content/location/location_screen.dart';
 import 'package:red_egresados/ui/pages/content/music/response_screen.dart';
 //import 'package:red_egresados/ui/pages/content/music/widgets/song_card.dart';
@@ -11,6 +10,8 @@ import 'package:red_egresados/ui/pages/content/states/firestore_page.dart';
 //import 'package:red_egresados/ui/pages/content/states/states_screen.dart';
 //import 'package:red_egresados/ui/pages/content/users_offers/users_offers_screen.dart';
 import 'package:red_egresados/ui/widgets/appbar.dart';
+
+import 'chats/chat_page.dart';
 
 class ContentPage extends StatelessWidget {
   const ContentPage({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class ContentPage extends StatelessWidget {
       case 3:
         return LocationScreen();
       case 4:
-        return const UserMessages();
+        return ChatPage();
       default:
         return FireStorePage();
     }
@@ -45,7 +46,7 @@ class ContentPage extends StatelessWidget {
         controller: controller,
         //picUrl: 'https://uifaces.co/our-content/donated/gPZwCbdS.jpg',
         // tile: const Text("Saga music"),
-        tile: Text(authController.reactiveUser.value!.displayName ?? ""),
+        tile: Text(authController.reactiveUser.value!.displayName ?? "User"),
         onSignOff: () {
           authController.manager.signOut();
         },

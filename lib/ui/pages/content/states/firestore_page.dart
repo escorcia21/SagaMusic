@@ -59,13 +59,11 @@ class _FireStorePageState extends State<FireStorePage> {
           borderRadius: BorderRadius.circular(5.0),
         ),
         child: ListTile(
-          title: Text(record.userName),
-          subtitle: Text(record.content),
-          trailing: Text(record.favorites.toString()),
-          onTap: () => firebaseController.updateEntry(record, 1),
-          //onLongPress: () => firebaseController.updateEntry(record, 0),
-          onLongPress: () => firebaseController.deleteEntry(record),
-        ),
+            title: Text(record.userName),
+            subtitle: Text(record.content),
+            trailing: Text(record.favorites.toString()),
+            onTap: () => firebaseController.updateEntry(record),
+            onLongPress: () => firebaseController.deleteEntry(record)),
       ),
     );
   }

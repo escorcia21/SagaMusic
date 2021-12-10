@@ -36,20 +36,16 @@ class FirebaseController extends GetxController {
     baby
         .add({
           'content': name,
+          'user': authController.reactiveUser.value!.uid,
+          'userName': authController.reactiveUser.value!.displayName ?? "User",
           'favorites': 0,
-          'userName': authController.reactiveUser.value!.displayName,
-          'user': authController.reactiveUser.value!.uid
         })
         .then((value) => print("Baby added"))
         .catchError((onError) => print("Failed to add baby $onError"));
   }
 
-  updateEntry(Publications record, int operation) {
-    if (operation == 1) {
-      record.reference.update({'favorites': record.favorites + 1});
-    } else {
-      record.reference.update({'favorites': record.favorites - 1});
-    }
+  updateEntry(Publications record) {
+    record.reference.update({'favorites': record.favorites + 1});
   }
 
   deleteEntry(Publications record) {

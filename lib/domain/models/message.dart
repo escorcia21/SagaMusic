@@ -1,28 +1,21 @@
-class ChatMessage {
-  String sender, message;
-  String? reference;
-  int? timestamp;
+import 'package:firebase_database/firebase_database.dart';
 
-  ChatMessage(
-      {required this.message,
-      required this.sender,
-      this.reference,
-      this.timestamp});
+class Message {
+  String key;
+  String text;
+  String user;
 
-  factory ChatMessage.fromJson(Map<String, dynamic> map) {
-    final data = map["data"] ?? map;
-    return ChatMessage(
-        message: data['message'],
-        sender: data['sender'],
-        timestamp: data['timestamp'],
-        reference: map['ref'] ?? '');
-  }
+  Message(this.key, this.text, this.user);
 
-  Map<String, dynamic> toJson() {
+  Message.fromSnapshot(DataSnapshot snapshot)
+      : key = snapshot.key ?? "0",
+        text = snapshot.value["text"],
+        user = snapshot.value["uid"];
+
+  toJson() {
     return {
-      "message": message,
-      "sender": sender,
-      "timestamp": timestamp ?? DateTime.now().millisecondsSinceEpoch,
+      "text": text,
+      "user": user,
     };
   }
 }

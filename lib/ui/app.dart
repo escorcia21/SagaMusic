@@ -8,6 +8,7 @@ import 'package:red_egresados/data/repositories/password_auth.dart';
 import 'package:red_egresados/domain/repositorires/auth.dart';
 import 'package:red_egresados/domain/use_cases/auth_management.dart';
 import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
+import 'package:red_egresados/domain/use_cases/controllers/chat_controller.dart';
 import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
 import 'package:red_egresados/domain/use_cases/controllers/location.dart';
 import 'package:red_egresados/domain/use_cases/controllers/notification.dart';
@@ -126,6 +127,7 @@ class _AppState extends State<App> {
   }
 
   _firebaseStateInit() {
+    Get.put(ChatController());
     AuthController authController = Get.find<AuthController>();
     // Setting manager
     authController.authManagement = AuthManagement(
