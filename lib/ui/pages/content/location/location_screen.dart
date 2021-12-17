@@ -69,9 +69,9 @@ class LocationScreen extends StatelessWidget {
                   if (snapshot.hasData) {
                     final items = snapshot.data!;
                     notificationController.show(
-                        title: 'Egresados cerca.',
+                        title: 'Personas cerca.',
                         body:
-                            'Hay ${items.length} egresados cerca de tu ubicación...');
+                            'Hay ${items.length} personas cerca de tu ubicación...');
                     return ListView.builder(
                       itemCount: items.length,
                       itemBuilder: (context, index) {

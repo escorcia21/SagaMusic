@@ -82,6 +82,14 @@ class _FireStorePageState extends State<FireStorePage> {
       textOK: Text('Ok'),
       textCancel: Text('Cancel'),
       hintText: 'Escribe aquí',
+      validator: (value) {
+        if (value!.isEmpty) {
+          return 'Por favor ingresar algo';
+        } else if (value.length > 150) {
+          return 'Texto muy largo,\ndebe tener menos de\n150 caracteres.\nfueron ingresados: ${value.length}';
+        }
+        return null;
+      },
       minLines: 1,
       maxLines: 7,
       autoFocus: true,

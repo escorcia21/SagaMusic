@@ -66,34 +66,35 @@ class ContentPage extends StatelessWidget {
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_comment_rounded,
-                  key: Key("statesSection"),
+                  key: Key("Estados"),
                 ),
                 label: 'Estados',
               ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.music_note_sharp,
-                  key: Key("socialSection"),
+                  key: Key("Musica"),
                 ),
                 label: 'Musica',
               ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.public_outlined,
-                  key: Key("offersSection"),
+                  key: Key("Publicaciones"),
                 ),
                 label: 'Publicaciones',
               ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.place_outlined,
-                  key: Key("locationSection"),
+                  key: Key("Ubicación"),
                 ),
                 label: 'Ubicación',
               ),
               BottomNavigationBarItem(
                 icon: Icon(
                   Icons.chat_bubble_outline,
+                  key: Key("Mensajes"),
                 ),
                 label: 'Mensajes',
               ),
