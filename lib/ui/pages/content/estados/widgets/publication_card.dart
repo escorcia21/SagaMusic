@@ -3,19 +3,15 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:red_egresados/ui/widgets/card.dart';
 
-class OfferCard extends StatelessWidget {
-  final String title, content, arch, level, payment;
-  final VoidCallback onApply;
+class PunlicationCard extends StatelessWidget {
+  final String title, content, email;
 
   // OfferCard constructor
-  const OfferCard(
+  const PunlicationCard(
       {Key? key,
       required this.title,
       required this.content,
-      required this.arch,
-      required this.level,
-      required this.payment,
-      required this.onApply})
+      required this.email})
       : super(key: key);
 
   // We create a Stateless widget that contais an AppCard,
@@ -40,7 +36,7 @@ class OfferCard extends StatelessWidget {
           Clipboard.setData(ClipboardData(text: content));
           Get.showSnackbar(
             GetBar(
-              message: "Se ha copiado la oferta al portapapeles.",
+              message: "Se ha copiado la publicacion al portapapeles.",
               duration: const Duration(seconds: 2),
             ),
           );
@@ -52,40 +48,17 @@ class OfferCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.all(4.0),
                 child: Icon(
-                  Icons.architecture,
+                  Icons.email,
                   color: primaryColor,
                 ),
               ),
               Text(
-                arch,
-                style: Theme.of(context).textTheme.caption,
-              ),
-              const Spacer(),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Icon(
-                  Icons.developer_mode_outlined,
-                  color: primaryColor,
-                ),
-              ),
-              Text(
-                level,
-                style: Theme.of(context).textTheme.caption,
-              ),
-              const Spacer(),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Icon(
-                  Icons.payments_outlined,
-                  color: primaryColor,
-                ),
-              ),
-              Text(
-                '\$$payment',
+                email,
                 style: Theme.of(context).textTheme.caption,
               ),
             ],

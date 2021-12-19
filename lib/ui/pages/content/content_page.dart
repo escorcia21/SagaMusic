@@ -5,13 +5,13 @@ import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
 import 'package:red_egresados/ui/pages/content/location/location_screen.dart';
 import 'package:red_egresados/ui/pages/content/music/response_screen.dart';
 //import 'package:red_egresados/ui/pages/content/music/widgets/song_card.dart';
-import 'package:red_egresados/ui/pages/content/estados/public_offers_screen.dart';
 import 'package:red_egresados/ui/pages/content/states/firestore_page.dart';
 //import 'package:red_egresados/ui/pages/content/states/states_screen.dart';
 //import 'package:red_egresados/ui/pages/content/users_offers/users_offers_screen.dart';
 import 'package:red_egresados/ui/widgets/appbar.dart';
 
 import 'chats/chat_page.dart';
+import 'estados/firestore_publications.dart';
 
 class ContentPage extends StatelessWidget {
   const ContentPage({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class ContentPage extends StatelessWidget {
       case 1:
         return const ResponseScreen();
       case 2:
-        return const PublicOffersScreen();
+        return PublicationsPage();
       case 3:
         return LocationScreen();
       case 4:

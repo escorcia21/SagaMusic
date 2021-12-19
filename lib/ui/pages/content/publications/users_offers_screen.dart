@@ -42,7 +42,7 @@ class _State extends State<UsersOffersScreen> {
               child: const Text("Agregar"),
               onPressed: () {
                 // We don't allow to trigger the action if we don't have connectivity
-                if (controller.connected) {
+                if (controller.connected == false) {
                   Get.dialog(
                     PublishOffer(
                       manager: manager,

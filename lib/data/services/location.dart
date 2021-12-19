@@ -5,10 +5,11 @@ import 'package:http/http.dart' as http;
 
 class LocationService implements MisionTicService {
   final String baseUrl = 'misiontic-2022-uninorte.herokuapp.com';
-  final String apiKey = 'wNLombyTzPIjLjkfp/aohu5b0Xy.iOM.4Sj4Q3.s9Ri9riyE6y5E2';
+  final String apiKey = 'Zgkd09z6VMxqTmmXw3GOp.qmW3xRMdKYSqb1Zz/3EMRaNNoylOeX2';
 
   @override
-  Future<List<UserLocation>> fecthData({int limit = 5, Map? map}) async {
+  Future<List<UserLocation>> fecthData({int limit = 2, Map? map}) async {
+    print(map);
     var queryParameters = {'limit': limit.toString()};
     var uri = Uri.https(baseUrl, '/location', queryParameters);
     final response = await http.post(
@@ -20,6 +21,7 @@ class LocationService implements MisionTicService {
       },
       body: json.encode(map),
     );
+    print(response.statusCode);
     if (response.statusCode == 200) {
       var res = json.decode(response.body);
       final List<UserLocation> locations = [];
