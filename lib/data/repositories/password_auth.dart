@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/repositorires/auth.dart';
+import 'package:saga_music/domain/repositorires/auth.dart';
 
 class PasswordAuth implements AuthInterface {
   @override

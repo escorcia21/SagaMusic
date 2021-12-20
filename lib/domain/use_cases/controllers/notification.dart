@@ -1,6 +1,6 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/notification_manager.dart';
+import 'package:saga_music/domain/use_cases/notification_manager.dart';
 
 class NotificationController extends GetxController {
   // Observables

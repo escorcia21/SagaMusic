@@ -2,9 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/user_status.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/status_management.dart';
+import 'package:saga_music/domain/models/user_status.dart';
+import 'package:saga_music/domain/use_cases/controllers/authentication.dart';
+import 'package:saga_music/domain/use_cases/status_management.dart';
 
 class PublishDialog extends StatefulWidget {
   final StatusManager manager;

@@ -1,9 +1,9 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
-import 'package:red_egresados/ui/pages/authentication/auth_page.dart';
+import 'package:saga_music/domain/use_cases/controllers/authentication.dart';
+import 'package:saga_music/domain/use_cases/controllers/connectivity.dart';
+import 'package:saga_music/ui/pages/authentication/auth_page.dart';
 
 void main() {
   final TestWidgetsFlutterBinding binding =

@@ -1,10 +1,10 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/data/services/location.dart';
-import 'package:red_egresados/domain/use_cases/controllers/music_controller.dart';
-import 'package:red_egresados/domain/use_cases/location_management.dart';
-import 'package:red_egresados/ui/app.dart';
+import 'package:saga_music/data/services/location.dart';
+import 'package:saga_music/domain/use_cases/controllers/music_controller.dart';
+import 'package:saga_music/domain/use_cases/location_management.dart';
+import 'package:saga_music/ui/app.dart';
 import 'package:workmanager/workmanager.dart';
 
 import 'domain/models/location.dart';

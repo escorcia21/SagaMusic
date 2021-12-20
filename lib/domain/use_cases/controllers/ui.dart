@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/theme_management.dart';
+import 'package:saga_music/domain/use_cases/theme_management.dart';
 
 class UIController extends GetxController {
   // Observables

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/models/location.dart';
-import 'package:red_egresados/domain/use_cases/location_management.dart';
+import 'package:saga_music/domain/models/location.dart';
+import 'package:saga_music/domain/use_cases/location_management.dart';
 
 class LocationController extends GetxController {
   // Observables

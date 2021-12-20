@@ -3,11 +3,11 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prompt_dialog/prompt_dialog.dart';
-import 'package:red_egresados/domain/models/publications.dart';
-import 'package:red_egresados/domain/models/user_publications.dart';
-import 'package:red_egresados/domain/use_cases/controllers/firestore_publications.dart';
-import 'package:red_egresados/ui/pages/content/estados/widgets/publication_card.dart';
-import 'package:red_egresados/ui/theme/colors.dart';
+import 'package:saga_music/domain/models/publications.dart';
+import 'package:saga_music/domain/models/user_publications.dart';
+import 'package:saga_music/domain/use_cases/controllers/firestore_publications.dart';
+import 'package:saga_music/ui/pages/content/estados/widgets/publication_card.dart';
+import 'package:saga_music/ui/theme/colors.dart';
 
 class PublicationsPage extends StatefulWidget {
   @override

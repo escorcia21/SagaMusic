@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:red_egresados/ui/widgets/card.dart';
+import 'package:saga_music/ui/widgets/card.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LocationCard extends StatelessWidget {
@@ -60,15 +60,15 @@ class LocationCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               if (lat != 0)
-              Text(
-                'Latitud:',
-                style: Theme.of(context).textTheme.headline3,
-              ),
+                Text(
+                  'Latitud:',
+                  style: Theme.of(context).textTheme.headline3,
+                ),
               if (long != 0)
-              Text(
-                'Longitud:',
-                style: Theme.of(context).textTheme.headline3,
-              ),
+                Text(
+                  'Longitud:',
+                  style: Theme.of(context).textTheme.headline3,
+                ),
               if (distance != null)
                 Text(
                   'Distancia:',

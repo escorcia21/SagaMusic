@@ -1,6 +1,6 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:red_egresados/data/repositories/shared_preferences.dart';
-import 'package:red_egresados/data/services/geolocation.dart';
+import 'package:saga_music/data/repositories/shared_preferences.dart';
+import 'package:saga_music/data/services/geolocation.dart';
 
 class LocationManager {
   final gpsService = GpsService();

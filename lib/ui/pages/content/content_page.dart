@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
-import 'package:red_egresados/ui/pages/content/location/location_screen.dart';
-import 'package:red_egresados/ui/pages/content/music/response_screen.dart';
-//import 'package:red_egresados/ui/pages/content/music/widgets/song_card.dart';
-import 'package:red_egresados/ui/pages/content/states/firestore_page.dart';
-//import 'package:red_egresados/ui/pages/content/states/states_screen.dart';
-//import 'package:red_egresados/ui/pages/content/users_offers/users_offers_screen.dart';
-import 'package:red_egresados/ui/widgets/appbar.dart';
+import 'package:saga_music/domain/use_cases/controllers/authentication.dart';
+import 'package:saga_music/domain/use_cases/controllers/ui.dart';
+import 'package:saga_music/ui/pages/content/location/location_screen.dart';
+import 'package:saga_music/ui/pages/content/music/response_screen.dart';
+//import 'package:saga_music/ui/pages/content/music/widgets/song_card.dart';
+import 'package:saga_music/ui/pages/content/states/firestore_page.dart';
+//import 'package:saga_music/ui/pages/content/states/states_screen.dart';
+//import 'package:saga_music/ui/pages/content/users_offers/users_offers_screen.dart';
+import 'package:saga_music/ui/widgets/appbar.dart';
 
 import 'chats/chat_page.dart';
 import 'estados/firestore_publications.dart';

@@ -2,8 +2,8 @@
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:red_egresados/domain/models/track_model.dart';
-import 'package:red_egresados/domain/services/misiontic_interface.dart';
+import 'package:saga_music/domain/models/track_model.dart';
+import 'package:saga_music/domain/services/misiontic_interface.dart';
 
 class TrackPoolService implements MisionTicService {
   final String baseUrl = 'api.napster.com';

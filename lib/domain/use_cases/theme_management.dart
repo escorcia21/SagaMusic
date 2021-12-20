@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/data/repositories/shared_preferences.dart';
+import 'package:saga_music/data/repositories/shared_preferences.dart';
 
 class ThemeManager {
   final _sharedPreferences = LocalPreferences();

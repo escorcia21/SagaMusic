@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
+import 'package:saga_music/domain/use_cases/controllers/authentication.dart';
+import 'package:saga_music/domain/use_cases/controllers/connectivity.dart';
 
 class SignUpScreen extends StatefulWidget {
   final VoidCallback onViewSwitch;

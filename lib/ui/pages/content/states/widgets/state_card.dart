@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:red_egresados/ui/widgets/card.dart';
+import 'package:saga_music/ui/widgets/card.dart';
 
 class StateCard extends StatelessWidget {
   final String title, content, picUrl;

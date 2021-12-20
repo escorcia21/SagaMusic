@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:red_egresados/domain/models/publications.dart';
+import 'package:saga_music/domain/models/publications.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
 import 'authentication.dart';

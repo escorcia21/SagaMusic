@@ -1,4 +1,4 @@
-import 'package:red_egresados/domain/services/location.dart';
+import 'package:saga_music/domain/services/location.dart';
 import 'package:geolocator/geolocator.dart';
 
 class GpsService implements LocationInterface {

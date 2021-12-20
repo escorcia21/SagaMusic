@@ -1,5 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:red_egresados/domain/services/notification.dart';
+import 'package:saga_music/domain/services/notification.dart';
 
 class NotificationService implements NotificationInterface {
   final _plugin = FlutterLocalNotificationsPlugin();

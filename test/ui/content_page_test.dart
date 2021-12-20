@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:get/get.dart';
 import 'package:network_image_mock/network_image_mock.dart';
-import 'package:red_egresados/ui/pages/content/content_page.dart';
+import 'package:saga_music/ui/pages/content/content_page.dart';
 
 void main() {
   testWidgets("states-screen", (WidgetTester tester) async {

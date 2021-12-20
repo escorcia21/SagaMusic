@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/data/services/location.dart';
-import 'package:red_egresados/domain/models/location.dart';
-import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
-import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
-import 'package:red_egresados/domain/use_cases/controllers/location.dart';
-import 'package:red_egresados/domain/use_cases/controllers/notification.dart';
-import 'package:red_egresados/domain/use_cases/controllers/permissions.dart';
-import 'package:red_egresados/domain/use_cases/controllers/ui.dart';
-import 'package:red_egresados/domain/use_cases/location_management.dart';
+import 'package:saga_music/data/services/location.dart';
+import 'package:saga_music/domain/models/location.dart';
+import 'package:saga_music/domain/use_cases/controllers/authentication.dart';
+import 'package:saga_music/domain/use_cases/controllers/connectivity.dart';
+import 'package:saga_music/domain/use_cases/controllers/location.dart';
+import 'package:saga_music/domain/use_cases/controllers/notification.dart';
+import 'package:saga_music/domain/use_cases/controllers/permissions.dart';
+import 'package:saga_music/domain/use_cases/controllers/ui.dart';
+import 'package:saga_music/domain/use_cases/location_management.dart';
 import 'package:workmanager/workmanager.dart';
 import 'widgets/location_card.dart';
 

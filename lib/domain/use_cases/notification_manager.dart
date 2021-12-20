@@ -1,5 +1,5 @@
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:red_egresados/data/services/notification.dart';
+import 'package:saga_music/data/services/notification.dart';
 
 class NotificationManager {
   final _service = NotificationService();

@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:red_egresados/domain/repositorires/database.dart';
+import 'package:saga_music/domain/repositorires/database.dart';
 
 class RealTimeDB extends DatabaseInterface {
   // We get the Firestore instance

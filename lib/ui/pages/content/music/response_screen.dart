@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/data/services/track_pool.dart';
-import 'package:red_egresados/domain/models/track_model.dart';
-import 'package:red_egresados/domain/use_cases/controllers/music_controller.dart';
-import 'package:red_egresados/ui/pages/content/music/widgets/song_card.dart';
+import 'package:saga_music/data/services/track_pool.dart';
+import 'package:saga_music/domain/models/track_model.dart';
+import 'package:saga_music/domain/use_cases/controllers/music_controller.dart';
+import 'package:saga_music/ui/pages/content/music/widgets/song_card.dart';
 
 class ResponseScreen extends StatefulWidget {
   const ResponseScreen({Key? key}) : super(key: key);

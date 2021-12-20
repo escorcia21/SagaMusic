@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:red_egresados/ui/pages/authentication/login/login_screen.dart';
-import 'package:red_egresados/ui/pages/authentication/signup/singup_screen.dart';
+import 'package:saga_music/ui/pages/authentication/login/login_screen.dart';
+import 'package:saga_music/ui/pages/authentication/signup/singup_screen.dart';
 
 class AuthenticationPage extends StatefulWidget {
   const AuthenticationPage({Key? key}) : super(key: key);

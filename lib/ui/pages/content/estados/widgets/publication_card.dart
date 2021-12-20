@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:red_egresados/ui/widgets/card.dart';
+import 'package:saga_music/ui/widgets/card.dart';
 
 class PunlicationCard extends StatelessWidget {
   final String title, content, email;

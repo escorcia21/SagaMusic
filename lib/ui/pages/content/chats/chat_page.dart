@@ -1,12 +1,12 @@
-import 'package:red_egresados/domain/models/message.dart';
-import 'package:red_egresados/domain/use_cases/controllers/chat_controller.dart';
+import 'package:saga_music/domain/models/message.dart';
+import 'package:saga_music/domain/use_cases/controllers/chat_controller.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
-import 'package:red_egresados/ui/theme/colors.dart';
+import 'package:saga_music/ui/theme/colors.dart';
 
 final databaseReference = FirebaseDatabase.instance.reference();
 

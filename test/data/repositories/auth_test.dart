@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
-import 'package:red_egresados/data/repositories/password_auth.dart';
+import 'package:saga_music/data/repositories/password_auth.dart';
 
 class MockAuth extends Mock implements PasswordAuth {
   @override

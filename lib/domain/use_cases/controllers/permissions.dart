@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:red_egresados/domain/use_cases/permission_management.dart';
+import 'package:saga_music/domain/use_cases/permission_management.dart';
 
 class PermissionsController extends GetxController {
   // Observables

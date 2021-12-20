@@ -1,10 +1,10 @@
-import 'package:red_egresados/domain/models/publications.dart';
-import 'package:red_egresados/domain/use_cases/controllers/firestore_controller.dart';
+import 'package:saga_music/domain/models/publications.dart';
+import 'package:saga_music/domain/use_cases/controllers/firestore_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:prompt_dialog/prompt_dialog.dart';
-import 'package:red_egresados/ui/pages/content/states/widgets/new_state.dart';
-import 'package:red_egresados/ui/theme/colors.dart';
+import 'package:saga_music/ui/pages/content/states/widgets/new_state.dart';
+import 'package:saga_music/ui/theme/colors.dart';
 
 class FireStorePage extends StatefulWidget {
   @override
