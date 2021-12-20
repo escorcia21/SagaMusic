@@ -24,13 +24,16 @@ class _State extends State<SignUpScreen> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
               "Creación de usuario",
-              style: Theme.of(context).textTheme.headline1,
+              style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold),
             ),
           ),
           Padding(
@@ -38,10 +41,13 @@ class _State extends State<SignUpScreen> {
             child: TextField(
               key: const Key("signUpName"),
               controller: nameController,
+              style: TextStyle(color: Colors.black),
               decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Usuario',
-              ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(),
+                  labelText: 'Nombre',
+                  labelStyle: TextStyle(color: Colors.red)),
             ),
           ),
           Padding(
@@ -49,10 +55,13 @@ class _State extends State<SignUpScreen> {
             child: TextField(
               key: const Key("signUpEmail"),
               controller: emailController,
+              style: TextStyle(color: Colors.black),
               decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Correo electrónico',
-              ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(),
+                  labelText: 'Email',
+                  labelStyle: TextStyle(color: Colors.red)),
             ),
           ),
           Padding(
@@ -62,10 +71,13 @@ class _State extends State<SignUpScreen> {
               controller: passwordController,
               obscureText: true,
               obscuringCharacter: "*",
+              style: TextStyle(color: Colors.black),
               decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Clave',
-              ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(),
+                  labelText: 'Clave',
+                  labelStyle: TextStyle(color: Colors.red)),
             ),
           ),
           Row(

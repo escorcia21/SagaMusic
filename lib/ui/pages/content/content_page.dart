@@ -46,7 +46,7 @@ class ContentPage extends StatelessWidget {
         controller: controller,
         //picUrl: 'https://uifaces.co/our-content/donated/gPZwCbdS.jpg',
         // tile: const Text("Saga music"),
-        tile: Text(authController.reactiveUser.value!.displayName ?? "User"),
+        tile: const Text("Saga Music"),
         onSignOff: () {
           authController.manager.signOut();
         },

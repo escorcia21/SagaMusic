@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:get/get.dart';
 import 'package:red_egresados/domain/use_cases/controllers/authentication.dart';
 import 'package:red_egresados/domain/use_cases/controllers/connectivity.dart';
@@ -24,13 +23,17 @@ class _State extends State<LoginScreen> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
               "Iniciar sesión",
-              style: Theme.of(context).textTheme.headline1,
+              // style: Theme.of(context).textTheme.headline1,
+              style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold),
             ),
           ),
           Padding(
@@ -38,9 +41,13 @@ class _State extends State<LoginScreen> {
             child: TextField(
               key: const Key("signInEmail"),
               controller: emailController,
+              style: TextStyle(color: Colors.black),
               decoration: const InputDecoration(
+                filled: true,
+                fillColor: Colors.white,
                 border: OutlineInputBorder(),
                 labelText: 'Correo electrónico',
+                labelStyle: TextStyle(color: Colors.red),
               ),
             ),
           ),
@@ -49,12 +56,15 @@ class _State extends State<LoginScreen> {
             child: TextField(
               key: const Key("signInPassword"),
               controller: passwordController,
+              style: TextStyle(color: Colors.black),
               obscureText: true,
               obscuringCharacter: "*",
               decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Clave',
-              ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  border: OutlineInputBorder(),
+                  labelText: 'Clave',
+                  labelStyle: TextStyle(color: Colors.red)),
             ),
           ),
           Row(
@@ -85,10 +95,9 @@ class _State extends State<LoginScreen> {
             ],
           ),
           TextButton(
-            key: const Key("toSignUpButton"),
-            child: const Text("Registrarse"),
-            onPressed: widget.onViewSwitch,
-          ),
+              key: const Key("toSignUpButton"),
+              child: const Text("Registrarse"),
+              onPressed: widget.onViewSwitch),
         ],
       ),
     );
