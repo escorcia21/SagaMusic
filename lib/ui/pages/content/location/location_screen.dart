@@ -50,53 +50,54 @@ class LocationScreen extends StatelessWidget {
                   )
                 : const CircularProgressIndicator(),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0),
-            child: Text(
-              'CERCA DE MÍ',
-              style: Theme.of(context).textTheme.headline1,
-            ),
-          ),
-          // ListView on remaining screen space
-          Obx(() {
-            if (locationController.location != null) {
-              var futureLocations = service.fecthData(
-                map: locationController.location!.toJson,
-              );
-              return FutureBuilder<List<UserLocation>>(
-                future: futureLocations,
-                builder: (context, snapshot) {
-                  if (snapshot.hasData) {
-                    final items = snapshot.data!;
-                    notificationController.show(
-                        title: 'Personas cerca.',
-                        body:
-                            'Hay ${items.length} personas cerca de tu ubicación...');
-                    return ListView.builder(
-                      itemCount: items.length,
-                      itemBuilder: (context, index) {
-                        UserLocation location = items[index];
-                        return LocationCard(
-                          title: location.name,
-                          distance: location.distance,
-                        );
-                      },
-                      // Avoid scrollable inside scrollable
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                    );
-                  } else if (snapshot.hasError) {
-                    return Text("${snapshot.error}");
-                  }
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(vertical: 8.0),
+          //   child: Text(
+          //     'CERCA DE MÍ',
+          //     style: Theme.of(context).textTheme.headline1,
+          //   ),
+          // ),
+          // // ListView on remaining screen space
+          // Obx(() {
+          //   if (locationController.location != null) {
+          //     var futureLocations = service.fecthData(
+          //       map: locationController.location!.toJson,
+          //     );
+          //     return FutureBuilder<List<UserLocation>>(
+          //       future: futureLocations,
+          //       builder: (context, snapshot) {
+          //         if (snapshot.hasData) {
+          //           final items = snapshot.data!;
+          //           notificationController.show(
+          //               title: 'Personas cerca.',
+          //               body:
+          //                   'Hay ${items.length} personas cerca de tu ubicación...');
+          //           return ListView.builder(
+          //             itemCount: items.length,
+          //             itemBuilder: (context, index) {
+          //               UserLocation location = items[index];
+          //               return LocationCard(
+          //                 title: location.name,
+          //                 distance: location.distance,
+          //               );
+          //             },
+          //             // Avoid scrollable inside scrollable
+          //             shrinkWrap: true,
+          //             physics: const NeverScrollableScrollPhysics(),
+          //           );
+          //         } else if (snapshot.hasError) {
+          //           return Text("${snapshot.error}");
+          //         }
 
-                  // By default, show a loading spinner.
-                  return const Center(child: CircularProgressIndicator());
-                },
-              );
-            } else {
-              return const CircularProgressIndicator();
-            }
-          })
+          //         // By default, show a loading spinner.
+          //         return const Center(child: CircularProgressIndicator());
+          //       },
+          //     );
+          //   } else {
+          //     return const CircularProgressIndicator();
+          //   }
+          // }
+          // )
         ],
       ),
     );
